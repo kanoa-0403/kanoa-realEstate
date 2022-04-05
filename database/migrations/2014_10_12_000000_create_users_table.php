@@ -15,11 +15,11 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->string('lastname')->comment('名前');
-            $table->string('firstname')->comment('名字');
-            $table->string('lastname_kana')->comment('名前(カナ)');
-            $table->string('firstname_kana')->comment('名前(カナ)');
-            $table->string('gender')->comment('性別');
+            $table->string('lastname')->comment('名');
+            $table->string('firstname')->comment('性');
+            $table->string('lastname_kana')->comment('セイ');
+            $table->string('firstname_kana')->comment('メイ');
+            $table->string('sex')->comment('性別');
             $table->string('birth_date')->comment('生年月日');
             $table->string('email')->comment('メールアドレス');
             $table->string('phone_number')->comment('電話番号');

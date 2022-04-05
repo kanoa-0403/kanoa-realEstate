@@ -1,0 +1,42 @@
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* 
+form {
+    width: 100px;
+    margin: 0 auto;
+} */
+
+.col {
+    width: calc(1000px * 1 / 12);
+}
+
+.col2 {
+    width: calc(1000px * 2 / 12);
+}
+
+.col5 {
+    width: calc(1000px * 5 / 12);
+}
+
+.col6 {
+    width: calc(1000px * 6 / 12);
+}
+
+.col10 {
+    width: calc(1000px * 10 / 12);
+}
+
+.col12 {
+    width: calc(1000px * 12 / 12);
+}
+
+td {
+    background-color: aqua;
+}
