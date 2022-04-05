@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname_kana')->comment('セイ');
             $table->string('firstname_kana')->comment('メイ');
             $table->string('sex')->comment('性別');
-            $table->string('birth_date')->comment('生年月日');
+            $table->date('birth_date')->comment('生年月日');
             $table->string('email')->comment('メールアドレス');
             $table->string('phone_number')->comment('電話番号');
             $table->string('postcode')->comment('住所(郵便番号)');
@@ -29,8 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('block')->comment('住所(番地・建物名・部屋番号)');
             $table->string('password')->unique()->comment('パスワード');
             $table->string('profile_img')->comment('プロフィール画像');
-            $table->string('profile')->comment('プロフィール');
-            $table->string('role')->comment('役職');
+            $table->text('profile')->comment('プロフィール');
+            $table->tinyInteger('role')->comment('役職');
             $table->timestamps();
         });
     }
