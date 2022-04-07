@@ -16,4 +16,5 @@ use App\Http\Controllers\UsersController;
 
 Route::get('/register/input', [UsersController::class, 'input'])->name('users_input');
 Route::post('/register/confirm', [UsersController::class, 'confirm'])->name('users_input_confirm');
-Route::post('/register/complete', [UsersController::class, 'complete'])->name('users_input_complete');
+Route::get('/register/complete', [UsersController::class, 'complete'])->name('users_input_complete');
+Route::post('/register/store', [UsersController::class, 'store'])->name('users_input_store');
